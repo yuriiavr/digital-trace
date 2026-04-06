@@ -49,7 +49,7 @@ const projects = [
     slug: "aifixer",
     title: "AI Fixer",
     tech: "Electron · Gemini AI",
-    background: "url(/projects/AIFixer.png)",
+    background: "url(/projects/AiFixer.png)",
   },
   {
     slug: "threads",
