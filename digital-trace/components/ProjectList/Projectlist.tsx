@@ -37,31 +37,31 @@ const projects = [
     slug: "aliasai",
     title: "AliasAI",
     tech: "Next.js · Gemini AI",
-    background: "url(/projects/aliasai.png)",
+    background: "url(/projects/AliasAI.png)",
   },
   {
     slug: "whisperoffate",
     title: "Whisper of Fate",
     tech: "TypeScript · Gemini AI",
-    background: "url(/projects/whisperoffate.png)",
+    background: "url(/projects/WhisperOfFate.png)",
   },
   {
     slug: "aifixer",
     title: "AI Fixer",
     tech: "Electron · Gemini AI",
-    background: "url(/projects/aifixer.png)",
+    background: "url(/projects/AIFixer.png)",
   },
   {
     slug: "threads",
     title: "Threads",
     tech: "Next.js · Supabase",
-    background: "url(/projects/threads.png)",
+    background: "url(/projects/Threads.png)",
   },
   {
     slug: "keyframe",
     title: "Keyframe",
     tech: "Next.js · TypeScript",
-    background: "url('/projects/keyframe.png')",
+    background: "url('/projects/Keyframe.png')",
   },
 ];
 
