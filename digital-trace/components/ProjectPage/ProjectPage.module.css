@@ -1,0 +1,154 @@
+.cont {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 48px 0 80px;
+  gap: 20px;
+}
+
+.backbutton {
+  display: inline-flex;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  padding: 7px 18px;
+  border-radius: 4px;
+  align-self: flex-start;
+  transition: all 0.2s;
+}
+
+.backbutton:hover,
+.backbutton:focus {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.visitWebsite {
+  display: inline-flex;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  padding: 7px 18px;
+  border-radius: 4px;
+  align-self: flex-start;
+  transition: all 0.2s;
+}
+
+.visitWebsite:hover,
+.visitWebsite:focus {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.headerRow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-family: "Notable", sans-serif;
+  font-size: clamp(52px, 8vw, 88px);
+  line-height: 1;
+  color: var(--text-primary);
+  margin: 0;
+  transition: color 0.3s;
+}
+
+.lunaTitle {
+  font-family: "Notable", sans-serif;
+  font-size: clamp(52px, 8vw, 88px);
+  line-height: 1;
+  margin: 0;
+}
+
+.sectionTitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition:
+    color 0.3s,
+    background 0.3s;
+}
+
+.sub {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  transition: color 0.3s;
+}
+
+.mark {
+  font-family: "Oswald", sans-serif;
+  font-size: inherit;
+  font-weight: 600;
+  color: var(--accent);
+  transition: color 0.3s;
+}
+
+.attention {
+  background: var(--accent);
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.preview {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  transition: border-color 0.3s;
+}
+
+.introBlock {
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(18px, 2.5vw, 26px);
+  font-weight: 300;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  transition: color 0.3s;
+}
+
+.divider {
+  height: 1px;
+  background: var(--border);
+  transition: background 0.3s;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: clamp(42px, 12vw, 64px);
+  }
+
+  .headerRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

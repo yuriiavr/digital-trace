@@ -1,0 +1,136 @@
+.grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.card {
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  transition: transform 0.25s, border-color 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.card.active {
+  border-color: var(--accent);
+}
+
+.card:hover .tech,
+.card.active .tech {
+  opacity: 1;
+}
+
+.card:hover .overlay,
+.card.active .overlay {
+  opacity: 1;
+}
+
+.cardLink {
+  display: block;
+  height: 280px;
+  position: relative;
+  text-decoration: none;
+  background: linear-gradient(160deg, var(--bg-secondary) 0%, var(--bg-card) 100%);
+  background-size: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.dot {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  z-index: 2;
+  transition: background 0.3s;
+}
+
+.tech {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 10px;
+  color: var(--text-secondary);
+  text-align: right;
+  line-height: 1.5;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover .tech {
+  opacity: 1;
+}
+
+.title {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  font-family: 'Notable', sans-serif;
+  font-size: 22px;
+  color: var(--text-primary);
+  z-index: 3;
+  transition: color 0.3s;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  transition: opacity 0.35s;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+[data-theme='light'] .overlay {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.overlayText {
+  font-family: 'Oswald', sans-serif;
+  font-size: 13px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+[data-theme='light'] .overlayText {
+  color: #111;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

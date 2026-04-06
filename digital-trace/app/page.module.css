@@ -1,0 +1,58 @@
+.hero {
+  padding: 72px 0 56px;
+}
+
+.tag {
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 16px;
+  transition: color 0.3s;
+}
+
+.title {
+  font-family: 'Notable', sans-serif;
+  font-size: clamp(42px, 7vw, 88px);
+  line-height: 1.0;
+  color: var(--text-primary);
+  margin-bottom: 28px;
+  transition: color 0.3s;
+
+  @media screen and (min-width: 1200px) {
+    font-size: clamp(52px, 7vw, 88px);
+  }
+}
+
+.subtitle {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(18px, 2.2vw, 26px);
+  font-weight: 300;
+  color: var(--text-secondary);
+  max-width: 680px;
+  line-height: 1.65;
+  transition: color 0.3s;
+}
+
+.projects {
+  padding-bottom: 80px;
+}
+
+.sectionTitle {
+  font-family: 'Notable', sans-serif;
+  font-size: clamp(28px, 4vw, 42px);
+  color: var(--text-primary);
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+  transition: color 0.3s, border-color 0.3s;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 48px 0 40px;
+  }
+}
