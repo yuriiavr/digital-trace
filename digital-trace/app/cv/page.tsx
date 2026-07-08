@@ -19,12 +19,17 @@ const content = {
     mobile: "Mobile:",
     database: "Database:",
     tools: "Tools:",
+    automation: "Автоматизація / AI:",
     softSkills: "Soft Skills:",
     aboutMe:
-      "Я Full-Stack розробник з більш ніж 2-річним досвідом у створенні веб- та мобільних додатків. Спеціалізуюся на JavaScript, React, Node.js, Python та React Native. Зосереджений на створенні високопродуктивних, зручних для користувача продуктів.",
+      "Я Full-Stack розробник з більш ніж 3-річним досвідом у створенні веб- та мобільних додатків. Спеціалізуюся на JavaScript, React, Node.js, Python та React Native. Зосереджений на створенні високопродуктивних, зручних для користувача продуктів.",
     experienceTitle: "Досвід",
     fullStackDev: "Full-Stack Розробник",
-    FiretraffPeriod: "Квітень 2023 — Березень 2026",
+    antischoolPeriod: "Квітень 2025 — Червень 2026",
+    antischoolCompany: "Antischool — Київ, Україна",
+    antischoolDesc:
+      "Створення нової платформи для вчителів, сервіс-менеджерів та HR. Автоматизація найму та процесів підбору вчителів для учнів.",
+    FiretraffPeriod: "Квітень 2023 — Березень 2025",
     FiretraffCompany: "Firetraff — Київ, Україна",
     FiretraffDesc:
       "Автоматизував внутрішні процеси компанії: автоматизація генерації лендингів, створення сервісу для email-кампаній зі статистикою переглядів, моніторинг стану серверів.",
@@ -65,12 +70,17 @@ const content = {
     mobile: "Mobile:",
     database: "Database:",
     tools: "Tools:",
+    automation: "Automation / AI:",
     softSkills: "Soft Skills:",
     aboutMe:
-      "I am a Full-Stack Developer with over 2 years of experience in building web and mobile applications. I specialize in JavaScript, React, Node.js, Python and React Native. Focused on delivering high-performing, user-friendly products.",
+      "I am a Full-Stack Developer with over 3 years of experience in building web and mobile applications. I specialize in JavaScript, React, Node.js, Python and React Native. Focused on delivering high-performing, user-friendly products.",
     experienceTitle: "Experience",
     fullStackDev: "Full-Stack Developer",
-    FiretraffPeriod: "April 2023 — March 2026",
+    antischoolPeriod: "April 2025 — June 2026",
+    antischoolCompany: "Antischool — Kyiv, Ukraine",
+    antischoolDesc:
+      "Built a new platform for teachers, service managers, and HR. Automated hiring and teacher-to-student matching processes.",
+    FiretraffPeriod: "April 2023 — March 2025",
     FiretraffCompany: "Firetraff — Kyiv, Ukraine",
     FiretraffDesc:
       "Automated internal company processes: streamlined landing page generation, developed an email campaign service with view statistics, and implemented server health monitoring.",
@@ -188,6 +198,10 @@ export default function CVPage() {
                 <span>Git, Webpack, Vite, Electron</span>
               </li>
               <li>
+                <b className={styles.skillLabel}>{t.automation}</b>
+                <span>Claude Code, n8n, Make, Zapier</span>
+              </li>
+              <li>
                 <b className={styles.skillLabel}>{t.softSkills}</b>
                 <span>Problem-solving, teamwork, adaptability</span>
               </li>
@@ -199,6 +213,15 @@ export default function CVPage() {
           <p className={styles.aboutMe}>{t.aboutMe}</p>
 
           <h2 className={styles.sectionHeading}>{t.experienceTitle}</h2>
+
+          <div className={styles.entry}>
+            <div className={styles.entryHeader}>
+              <h3 className={styles.entryTitle}>{t.fullStackDev}</h3>
+              <span className={styles.entryDate}>{t.antischoolPeriod}</span>
+            </div>
+            <span className={styles.entryCompany}>{t.antischoolCompany}</span>
+            <p className={styles.entryDesc}>{t.antischoolDesc}</p>
+          </div>
 
           <div className={styles.entry}>
             <div className={styles.entryHeader}>
