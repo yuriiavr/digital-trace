@@ -28,6 +28,13 @@ export default function Footer() {
           </a>
           <a
             className={styles.iconLink}
+            href="https://www.linkedin.com/in/avramets-yurii"
+            aria-label="LinkedIn"
+          >
+            IN
+          </a>
+          <a
+            className={styles.iconLink}
             href="https://github.com/yuriiavr"
             aria-label="GitHub"
           >

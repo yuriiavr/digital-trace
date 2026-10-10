@@ -26,6 +26,7 @@ export const projects: ProjectData[] = [
   {
     slug: 'amusements',
     liveUrl: 'https://amusements.vercel.app',
+    githubUrl: 'https://github.com/yuriiavr/amusements',
     titleStyle: {
       background: 'linear-gradient(to bottom, var(--text-primary) 0%, rgba(128,128,128,0.25) 100%)',
       WebkitBackgroundClip: 'text',
@@ -217,6 +218,7 @@ export const projects: ProjectData[] = [
   {
     slug: 'luna',
     liveUrl: 'https://yuriiavr.github.io/luna',
+    githubUrl: 'https://github.com/yuriiavr/luna',
     titleParts: [
       { text: 'L' },
       { text: 'U', color: '#38b6ff' },
@@ -366,6 +368,7 @@ export const projects: ProjectData[] = [
   {
     slug: 'aliasai',
     liveUrl: 'https://alias-umber.vercel.app',
+    githubUrl: 'https://github.com/yuriiavr/Alias',
     titleParts: [{ text: 'Alias' }, { text: 'AI', color: '#bd0000' }],
     titleStyle: { fontStyle: 'italic', letterSpacing: '-0.02em' },
     content: {
@@ -433,6 +436,7 @@ export const projects: ProjectData[] = [
   {
     slug: 'whisperoffate',
     liveUrl: 'https://whisper-of-fate.vercel.app',
+    githubUrl: 'https://github.com/yuriiavr/whisper-of-fate',
     titleStyle: {
       background: 'linear-gradient(to right, #a855f7, var(--text-primary), #fbbf24)',
       WebkitBackgroundClip: 'text',
@@ -575,6 +579,7 @@ export const projects: ProjectData[] = [
   {
     slug: 'threads',
     liveUrl: 'https://threads-top.vercel.app',
+    githubUrl: 'https://github.com/yuriiavr/threads-top',
     titleParts: [{ text: 'Top' }, { text: 'Threads', color: '#38bdf8' }],
     titleStyle: { fontStyle: 'italic', letterSpacing: '-0.04em' },
     content: {
@@ -642,6 +647,7 @@ export const projects: ProjectData[] = [
   {
     slug: 'keyframe',
     liveUrl: 'https://keyframe-gallery.vercel.app',
+    githubUrl: 'https://github.com/yuriiavr/shop-portfolio',
     titleParts: [{ text: 'Key' }, { text: 'frame', color: '#10b981' }],
     titleStyle: { fontStyle: 'italic', letterSpacing: '-0.04em' },
     content: {
