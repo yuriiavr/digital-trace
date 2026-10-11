@@ -104,21 +104,6 @@
   gap: 8px;
 }
 
-.contactList li {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.contactLabel {
-  font-family: 'Oswald', sans-serif;
-  font-size: 10px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--text-secondary);
-  transition: color 0.3s;
-}
-
 .contactLink {
   font-family: 'Oswald', sans-serif;
   font-size: 14px;
@@ -187,14 +172,6 @@
   font-weight: 600;
   font-size: 12px;
   letter-spacing: 1px;
-  transition: color 0.3s;
-}
-
-.softSkills {
-  font-family: 'Oswald', sans-serif;
-  font-size: 14px;
-  color: var(--text-secondary);
-  line-height: 1.5;
   transition: color 0.3s;
 }
 
@@ -375,7 +352,6 @@
   .entryDesc,
   .entryList,
   .skillList li,
-  .softSkills,
   .contactLink {
     font-size: 12px;
   }

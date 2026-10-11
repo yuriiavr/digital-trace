@@ -16,56 +16,50 @@ const content = {
     position: "Full-Stack Розробник",
     location: "Україна, Київ",
     contactsTitle: "Контакти",
-    mob: "Моб",
-    mail: "Пошта",
     skillsTitle: "Технічні навички",
     frontend: "Frontend:",
     backend: "Backend:",
     mobile: "Mobile:",
     database: "Database:",
     tools: "Tools:",
-    automation: "Автоматизація / AI:",
-    softSkillsTitle: "Soft Skills",
-    softSkills: "Вирішення проблем, командна робота, адаптивність",
+    ai: "AI / LLM:",
+    automation: "Автоматизація:",
     summaryTitle: "Про себе",
     aboutMe:
-      "Я Full-Stack розробник з більш ніж 3-річним досвідом у створенні веб- та мобільних додатків. Спеціалізуюся на JavaScript, TypeScript, React, Next.js, Node.js, Python та React Native. Зосереджений на створенні високопродуктивних, зручних для користувача продуктів.",
+      "Full-Stack розробник і Automation Lead з 3+ роками комерційного досвіду. Створюю веб-платформи та автоматизую бізнес-процеси під ключ: моєю поточною платформою щодня користуються 10 000+ людей. Працюю з JavaScript, TypeScript, React, Next.js, Node.js, NestJS, Python, n8n, Make та LLM API.",
     experienceTitle: "Досвід роботи",
+    stackLabel: "Стек:",
     jobs: [
       {
-        title: "Full-Stack Розробник",
-        period: "Квітень 2025 — Червень 2026",
-        company: "Antischool — Київ, Україна",
+        title: "Automation Lead / Full-Stack Розробник",
+        period: "Травень 2026 — донині",
+        company: "Space Deer Anti-School of English — Київ, Україна",
+        stack: "React, Next.js, Node.js, NestJS, n8n, Make, LLM API",
         achievements: [
-          "Створив нову платформу для вчителів, сервіс-менеджерів та HR.",
-          "Автоматизував найм вчителів і підбір вчителів для учнів, прибравши ручну роботу з цих процесів.",
+          "Самостійно розробив платформу компанії для вчителів, учнів, сервіс-менеджерів та HR — нею щодня користуються 10 000+ людей.",
+          "Автоматизував найм вчителів — через нього щомісяця проходять 200 нових вчителів.",
+          "Повністю автоматизував підбір вчителя для учня: раніше це забирало в менеджерів години, а учень чекав до 2 тижнів; тепер менеджер підключається лише до поодиноких складних кейсів.",
         ],
       },
       {
         title: "Full-Stack Розробник",
         period: "Квітень 2023 — Березень 2025",
         company: "Firetraff — Київ, Україна",
+        stack: "React, Next.js, Node.js, NestJS, Redis, n8n, Make",
         achievements: [
-          "Автоматизував генерацію лендингів.",
-          "Розробив сервіс для email-кампаній зі статистикою переглядів.",
-          "Впровадив моніторинг стану серверів.",
+          "Автоматизував генерацію лендингів: замість 10 за робочий день — 10 за годину (у 8 разів швидше); згенеровано 12 000+ лендингів.",
+          "Розробив сервіс email-розсилок з чергами на Redis, відкладеною відправкою та трекінгом Open Rate — ~20 000 листів на день через пул SMTP-серверів.",
+          "Впровадив моніторинг серверів зі сповіщеннями про падіння та статистикою.",
         ],
       },
       {
         title: "Frontend Розробник",
-        period: "Жовтень 2022 — Квітень 2023",
-        company: "Фріланс",
+        period: "Квітень 2022 — Квітень 2023",
+        company: "Content Mania (Київ, Україна) та фріланс",
+        stack: "HTML, CSS, JavaScript, React",
         achievements: [
-          "Виконав фриланс-проєкти для клієнтів.",
-          "Розробив власні продукти, опанувавши нові технології.",
-        ],
-      },
-      {
-        title: "Frontend Розробник",
-        period: "Квітень 2022 — Жовтень 2022",
-        company: "Content Mania — Київ, Україна",
-        achievements: [
-          "Зверстав pixel-perfect адаптивні сайти та лендинги.",
+          "Реалізував 500+ невеликих проєктів і 10 повноцінних великих сайтів.",
+          "Pixel-perfect адаптивна верстка сайтів та лендингів.",
         ],
       },
     ],
@@ -74,46 +68,25 @@ const content = {
     roleLabel: "Роль:",
     projects: [
       {
-        slug: "emailSender",
-        name: "Email Sender",
-        stack: "React · Node.js · Redis",
-        desc: "Full-stack сервіс email-розсилок: редактор листів, відкладена відправка, черги на Redis, трекінг Open Rate та адмін-панель пулу SMTP-серверів з лімітами й автовизначенням бану.",
-        role: "Соло-розробник — frontend і backend",
-      },
-      {
         slug: "threads",
         name: "Top Threads",
         stack: "Node.js · Puppeteer · Next.js · Supabase",
-        desc: "Моніторинг та аналітика українського сегмента Threads: власний скрапер на Puppeteer збирає трендові пости, фільтрує український контент і зберігає дані в Supabase.",
+        desc: "Аналітика українського сегмента Threads: скрапер на Puppeteer збирає трендові пости й зберігає їх у Supabase.",
         role: "Соло-розробник — скрапер, backend і UI",
       },
       {
         slug: "aliasai",
         name: "AliasAI",
         stack: "Next.js · Gemini API · Tailwind CSS",
-        desc: "AI-версія гри Alias: Gemini генерує тематичні слова під рівень гравців у реальному часі, стан гри синхронізується між пристроями.",
-        role: "Соло-розробник — повна розробка",
-      },
-      {
-        slug: "aifixer",
-        name: "AI Fixer",
-        stack: "Electron · Gemini API",
-        desc: "Кросплатформовий десктопний застосунок, що виправляє граматику та перефразовує текст у потрібному тоні за гарячими клавішами.",
+        desc: "AI-версія гри Alias: Gemini генерує тематичні слова в реальному часі, стан гри синхронізується між пристроями.",
         role: "Соло-розробник — повна розробка",
       },
       {
         slug: "keyframe",
         name: "Keyframe",
         stack: "Next.js · TypeScript · Tailwind CSS · Framer Motion",
-        desc: "Концептуальний інтернет-магазин механічних клавіатур: каталог з фільтрами, кошик з валідацією та збереженням стану, motion-дизайн.",
+        desc: "Концептуальний інтернет-магазин механічних клавіатур з фільтрами каталогу та кошиком зі збереженням стану.",
         role: "Соло-розробник — повна розробка",
-      },
-      {
-        slug: "luna",
-        name: "LUNA",
-        stack: "React · Node.js · MongoDB",
-        desc: "Новинна платформа про League of Legends українською: автентифікація, керування статтями, дошка пошуку команди, світла й темна теми.",
-        role: "Соло-розробник — frontend і backend",
       },
     ],
     educationTitle: "Освіта",
@@ -135,56 +108,50 @@ const content = {
     position: "Full-Stack Developer",
     location: "Ukraine, Kyiv",
     contactsTitle: "Contacts",
-    mob: "Phone",
-    mail: "Email",
     skillsTitle: "Tech Skills",
     frontend: "Frontend:",
     backend: "Backend:",
     mobile: "Mobile:",
     database: "Database:",
     tools: "Tools:",
-    automation: "Automation / AI:",
-    softSkillsTitle: "Soft Skills",
-    softSkills: "Problem-solving, teamwork, adaptability",
+    ai: "AI / LLM:",
+    automation: "Automation:",
     summaryTitle: "Summary",
     aboutMe:
-      "I am a Full-Stack Developer with over 3 years of experience in building web and mobile applications. I specialize in JavaScript, TypeScript, React, Next.js, Node.js, Python and React Native. Focused on delivering high-performing, user-friendly products.",
+      "Full-Stack Developer and Automation Lead with 3+ years of commercial experience. I build web platforms and automate business processes end to end: my current platform is used by 10,000+ people daily. I work with JavaScript, TypeScript, React, Next.js, Node.js, NestJS, Python, n8n, Make and LLM APIs.",
     experienceTitle: "Work Experience",
+    stackLabel: "Stack:",
     jobs: [
       {
-        title: "Full-Stack Developer",
-        period: "April 2025 — June 2026",
-        company: "Antischool — Kyiv, Ukraine",
+        title: "Automation Lead / Full-Stack Developer",
+        period: "May 2026 — Present",
+        company: "Space Deer Anti-School of English — Kyiv, Ukraine",
+        stack: "React, Next.js, Node.js, NestJS, n8n, Make, LLM APIs",
         achievements: [
-          "Built a new platform for teachers, service managers, and HR.",
-          "Automated teacher hiring and teacher-to-student matching, removing manual work from both processes.",
+          "Single-handedly built the company platform for teachers, students, service managers and HR, used daily by 10,000+ people.",
+          "Automated teacher hiring, which now onboards 200 new teachers every month.",
+          "Fully automated teacher-to-student matching that used to take managers hours and left students waiting up to 2 weeks; managers now step in only for rare complex cases.",
         ],
       },
       {
         title: "Full-Stack Developer",
         period: "April 2023 — March 2025",
         company: "Firetraff — Kyiv, Ukraine",
+        stack: "React, Next.js, Node.js, NestJS, Redis, n8n, Make",
         achievements: [
-          "Automated landing page generation.",
-          "Developed an email campaign service with view statistics.",
-          "Implemented server health monitoring.",
+          "Automated landing page generation: from 10 pages per working day to 10 per hour (8x faster), with 12,000+ pages generated.",
+          "Built an email campaign service with Redis queues, scheduled sending and open-rate tracking, delivering ~20,000 emails per day through a pool of SMTP servers.",
+          "Implemented server monitoring with downtime alerts and statistics.",
         ],
       },
       {
         title: "Frontend Developer",
-        period: "October 2022 — April 2023",
-        company: "Freelance",
+        period: "April 2022 — April 2023",
+        company: "Content Mania (Kyiv, Ukraine) & Freelance",
+        stack: "HTML, CSS, JavaScript, React",
         achievements: [
-          "Delivered freelance projects for clients.",
-          "Built personal products while mastering new technologies.",
-        ],
-      },
-      {
-        title: "Frontend Developer",
-        period: "April 2022 — October 2022",
-        company: "Content Mania — Kyiv, Ukraine",
-        achievements: [
-          "Delivered pixel-perfect, responsive websites and landing pages.",
+          "Delivered 500+ small projects and 10 full-scale websites.",
+          "Built pixel-perfect, responsive websites and landing pages.",
         ],
       },
     ],
@@ -193,46 +160,25 @@ const content = {
     roleLabel: "Role:",
     projects: [
       {
-        slug: "emailSender",
-        name: "Email Sender",
-        stack: "React · Node.js · Redis",
-        desc: "Full-stack newsletter service: email editor, scheduled sending, Redis queues, open-rate tracking and an admin panel for an SMTP server pool with daily limits and automatic ban detection.",
-        role: "Solo developer — frontend & backend",
-      },
-      {
         slug: "threads",
         name: "Top Threads",
         stack: "Node.js · Puppeteer · Next.js · Supabase",
-        desc: "Monitoring and analytics for the Ukrainian segment of Threads: a custom Puppeteer scraper collects trending posts, filters Ukrainian content and stores the data in Supabase.",
+        desc: "Analytics for the Ukrainian segment of Threads: a Puppeteer scraper collects trending posts and stores them in Supabase.",
         role: "Solo developer — scraper, backend & UI",
       },
       {
         slug: "aliasai",
         name: "AliasAI",
         stack: "Next.js · Gemini API · Tailwind CSS",
-        desc: "AI take on the Alias word game: Gemini generates themed words for the players' level in real time, with game state synced across devices.",
-        role: "Solo developer — full development",
-      },
-      {
-        slug: "aifixer",
-        name: "AI Fixer",
-        stack: "Electron · Gemini API",
-        desc: "Cross-platform desktop app that fixes grammar and rephrases text in a chosen tone via global hotkeys.",
+        desc: "AI version of the Alias word game: Gemini generates themed words in real time, with game state synced across devices.",
         role: "Solo developer — full development",
       },
       {
         slug: "keyframe",
         name: "Keyframe",
         stack: "Next.js · TypeScript · Tailwind CSS · Framer Motion",
-        desc: "Concept e-commerce store for mechanical keyboards: filterable product catalog, cart with validation and persisted state, motion design.",
+        desc: "Concept e-commerce store for mechanical keyboards with a filterable catalog and a persistent cart.",
         role: "Solo developer — full development",
-      },
-      {
-        slug: "luna",
-        name: "LUNA",
-        stack: "React · Node.js · MongoDB",
-        desc: "Ukrainian-language League of Legends news platform: authentication, article management, team-finder board, light and dark themes.",
-        role: "Solo developer — frontend & backend",
       },
     ],
     educationTitle: "Education",
@@ -305,13 +251,11 @@ export default function CVPage() {
             <h3 className={styles.sideHeading}>{t.contactsTitle}</h3>
             <ul className={styles.contactList}>
               <li>
-                <span className={styles.contactLabel}>{t.mob}</span>
                 <a href="tel:+380931848293" className={styles.contactLink}>
                   +380931848293
                 </a>
               </li>
               <li>
-                <span className={styles.contactLabel}>{t.mail}</span>
                 <a
                   href="mailto:yura.avramets@ukr.net"
                   className={styles.contactLink}
@@ -354,35 +298,40 @@ export default function CVPage() {
               <li>
                 <b className={styles.skillLabel}>{t.frontend}</b>
                 <span>
-                  HTML, CSS, JS, TypeScript, React, Redux, Next.js, Tailwind
+                  HTML, CSS, JavaScript, TypeScript, React, Redux, Next.js,
+                  Vue, Angular, Tailwind
                 </span>
               </li>
               <li>
                 <b className={styles.skillLabel}>{t.backend}</b>
-                <span>Node.js, Python</span>
+                <span>Node.js, NestJS, Express, Python, REST API, Webhooks</span>
+              </li>
+              <li>
+                <b className={styles.skillLabel}>{t.database}</b>
+                <span>
+                  PostgreSQL, MongoDB, MySQL, Redis, Supabase, Firebase
+                </span>
+              </li>
+              <li>
+                <b className={styles.skillLabel}>{t.ai}</b>
+                <span>OpenAI, Claude, Gemini, Ollama</span>
+              </li>
+              <li>
+                <b className={styles.skillLabel}>{t.automation}</b>
+                <span>
+                  n8n, Make, Zapier, Puppeteer, Playwright, Telegram Bots
+                  (Aiogram)
+                </span>
               </li>
               <li>
                 <b className={styles.skillLabel}>{t.mobile}</b>
                 <span>React Native, Expo</span>
               </li>
               <li>
-                <b className={styles.skillLabel}>{t.database}</b>
-                <span>MongoDB, MySQL, Firebase, Supabase</span>
-              </li>
-              <li>
                 <b className={styles.skillLabel}>{t.tools}</b>
-                <span>Git, Webpack, Vite, Electron</span>
-              </li>
-              <li>
-                <b className={styles.skillLabel}>{t.automation}</b>
-                <span>Claude Code, n8n, Make, Zapier</span>
+                <span>Git, Docker, Vite, Webpack, Electron, Claude Code</span>
               </li>
             </ul>
-          </div>
-
-          <div className={styles.sideSection}>
-            <h3 className={styles.sideHeading}>{t.softSkillsTitle}</h3>
-            <p className={styles.softSkills}>{t.softSkills}</p>
           </div>
         </aside>
 
@@ -399,6 +348,9 @@ export default function CVPage() {
                 <span className={styles.entryDate}>{job.period}</span>
               </div>
               <span className={styles.entryCompany}>{job.company}</span>
+              <p className={styles.entryDesc}>
+                <b className={styles.entryRole}>{t.stackLabel}</b> {job.stack}
+              </p>
               <ul className={styles.entryList}>
                 {job.achievements.map((item) => (
                   <li key={item}>{item}</li>
